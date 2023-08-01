@@ -26,7 +26,7 @@ resource "azurerm_virtual_network" "example" {
 }
 
 resource "azurerm_subnet" "example" {
-  provider             = azurerm.dev #alias reference
+  provider             = azurerm.dev #alias reference.
   name                 = "internal"
   resource_group_name  = azurerm_resource_group.example.name
   virtual_network_name = azurerm_virtual_network.example.name
